@@ -1,0 +1,35 @@
+{
+  "name": "ring-alarm-control",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "author": "",
+  "license": "ISC",
+  "type": "module",
+  "dependencies": {
+    "exit-hook": "^3.2.0",
+    "express": "^4.18.2",
+    "jquery": "^3.6.3",
+    "jquery-ui": "^1.13.2",
+    "material-components-web": "^14.0.0",
+    "ring-client-api": "^11.8.0",
+    "webpack": "^5.75.0"
+  },
+  "devDependencies": {
+    "@types/jquery": "^3.5.14",
+    "@types/jqueryui": "^1.12.17",
+    "eslint": "^8.30.0",
+    "eslint-config-standard-with-typescript": "^24.0.0",
+    "ts-loader": "^9.4.2",
+    "typescript": "^4.9.4",
+    "typescript-eslint": "^0.0.1-alpha.0",
+    "webpack-cli": "^5.0.1"
+  },
+  "scripts": {
+    "server": "cd ./src; node index.js",
+    "build": "cd ./src; npx tsc; cd public; npm run webpack",
+    "ts-watch": "cd ./src; npx tsc",
+    "webpack-watch": "cd ./src/public; npx webpack --watch",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  }
+}
